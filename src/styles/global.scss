@@ -1,0 +1,20 @@
+@import "layouts.scss";
+@import "styling.scss";
+
+* {
+  margin: 0;
+  border: none;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+input:focus-visible, select:focus-visible {
+  outline: none;
+}
+
+a {
+  text-decoration: none
+}
