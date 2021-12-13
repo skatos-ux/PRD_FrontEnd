@@ -1,4 +1,66 @@
 .button {
   border-radius: 15px;
+  padding: .7rem;
+
+  &--error {
+    background-color: $errorColor;
+  }
+
+  &--success {
+    background-color: $successColor;
+    color: white;
+  }
+
+  &--info {
+    background-color: $infoColor;
+  }
+}
+
+.form {
+  border-radius: 15px;
+
+  &__label {
+    width: 100%;
+
+    &--nostretch {
+      width: auto;
+    }
+
+    &--mini {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__input {
+    border-radius: 15px;
+    width: calc(100% - 1rem);
+    padding: .5rem;
+  }
+
+  &__anchor--mini {
+    font-size: 0.9rem;
+  }
+}
+
+.info {
+  width: calc(100% - 2rem);
   padding: 1rem;
+
+  &--error {
+    background-color: $errorColor;
+  }
+
+  &--success {
+    background-color: $successColor;
+  }
+
+  &--info {
+    background-color: $infoColor;
+  }
+}
+
+.checkbox {
+  margin-left: .5rem;
+  vertical-align: middle;
+  position: relative;
 }

@@ -10,8 +10,13 @@
     "plugin:import/warnings",
     "plugin:import/typescript"
   ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
   "parserOptions": {
-    "ecmaVersion": 13,
+    "ecmaVersion": 2021,
     "parser": "@typescript-eslint/parser",
     "sourceType": "module"
   },
@@ -25,6 +30,12 @@
       "tab"
     ],
     "no-tabs": 0,
+    "max-len": [
+      "error",
+      {
+        "code": 300
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -33,6 +44,15 @@
         "jsx": "never",
         "ts": "never",
         "tsx": "never"
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "state"
+        ]
       }
     ]
   }

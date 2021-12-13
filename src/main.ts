@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { injectionKey, store } from './store';
 
@@ -8,7 +8,7 @@ import App from './App.vue';
 
 import router from './router/index';
 
-library.add(faPhone);
+library.add(fas);
 
 const app = createApp(App);
 app.use(router);
