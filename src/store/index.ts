@@ -14,7 +14,7 @@ export interface State {
 		profile: Profile;
 }
 
-export const injectionKey: InjectionKey<Store<State>> = Symbol();
+export const injectionKey: InjectionKey<Store<State>> = Symbol('');
 
 export const store = createStore<State>({
 	state: {
