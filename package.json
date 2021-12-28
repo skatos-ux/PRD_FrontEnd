@@ -1,5 +1,5 @@
 {
-  "name": "blazing-not-that-fast-setup",
+  "name": "blazing-template",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -33,17 +33,5 @@
     "sass": "^1.44.0",
     "typescript": "^4.4.3",
     "vue-tsc": "^0.3.0"
-  },
-  "description": "- composition API\r - data models\r - parametrized routes\r - full store\r - separated global styles\r - api connection dev and prod\r - backend error management\r - input validation",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skatos-ux/Blazing-Not-That-Fast-Vue-Vite-Template.git"
-  },
-  "author": "Nicolas MAGNE",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/skatos-ux/Blazing-Not-That-Fast-Vue-Vite-Template/issues"
-  },
-  "homepage": "https://github.com/skatos-ux/Blazing-Not-That-Fast-Vue-Vite-Template#readme"
+  }
 }
