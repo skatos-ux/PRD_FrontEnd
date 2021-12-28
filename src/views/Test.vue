@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="page hvcentered column">
+	<div class="page page--fullsize flex center column">
 		<h1>{{ msg }}</h1>
 		<button class="button" type="submit" @click="count++">{{ count }}</button>
 	</div>

@@ -17,7 +17,7 @@ function connect(): void {
 </script>
 
 <template>
-	<div class="page flex center column">
+	<div class="page page--fullsize flex center column">
 		<form class="login__form form flex column content-start align-end">
 
 			<label class="form__label text-left">Adresse email</label>

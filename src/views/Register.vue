@@ -22,7 +22,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="page flex center">
+	<div class="page page--scroll flex center">
 		<div v-if="!hasSignedUp">
 			<form class="form flex column content-start align-end">
 				<label for="firstname" class="form__label text-left">Prénom</label>

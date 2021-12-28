@@ -12,10 +12,8 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="page hvcentered">
-		<h1>Works !
-			<font-awesome-icon icon="phone"/>
-		</h1>
+	<div class="page page--fullsize flex center">
+		<h1>Works ! &nbsp;<font-awesome-icon icon="phone"/></h1>
 	</div>
 </template>
 

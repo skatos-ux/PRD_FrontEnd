@@ -1,8 +1,12 @@
 .page {
-  width: 100vw;
+  width: 100%;
+}
+.page--scroll {
+  height: 100%;
+}
+.page--fullsize {
   height: 100vh;
 }
-
 // FLEXBOXES
 .flex {
   display: flex;
@@ -16,23 +20,23 @@
   flex-direction: row;
 }
 
-.content-start {
+.justify-start {
   justify-content: flex-start;
 }
 
-.content-end {
+.justify-end {
   justify-content: flex-end;
 }
 
-.content-center {
+.justify-center {
   justify-content: center;
 }
 
-.content-between {
+.justify-between {
   justify-content: space-between;
 }
 
-.content-evenly {
+.justify-evenly {
   justify-content: space-evenly;
 }
 
