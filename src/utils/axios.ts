@@ -16,4 +16,7 @@ export const productionInstance = createInstance('http://localhost:3000');
 export const routes = {
 	LOGIN: '/authenticate.php',
 	REGISTER: '/register.php',
+	TASKS: '/tasks.php',
+	TESTS: '/tests.php',
+	TEAMS: '/teams.php',
 };

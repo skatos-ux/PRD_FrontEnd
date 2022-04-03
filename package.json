@@ -1,5 +1,5 @@
 {
-  "name": "blazing-template",
+  "name": "planner",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -10,15 +10,22 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/vue-fontawesome": "^3.0.0-5",
+    "@fullcalendar/core": "^5.10.1",
+    "@fullcalendar/timegrid": "^5.10.1",
+    "@fullcalendar/vue3": "^5.10.1",
     "@types/node": "^16.11.12",
     "@vitejs/plugin-vue": "^1.9.3",
+    "@vueuse/core": "^7.5.1",
     "axios": "^0.24.0",
     "eslint-import-resolver-typescript": "^2.5.0",
+    "gsap": "^3.9.1",
     "js-cookie": "^3.0.1",
+    "moment": "^2.29.1",
     "path": "^0.12.7",
     "vite": "^2.6.4",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
+    "vue3-popper": "^1.4.1",
     "vuex": "^4.0.2",
     "vuex-persistedstate": "^4.1.0"
   },
@@ -33,5 +40,17 @@
     "sass": "^1.44.0",
     "typescript": "^4.4.3",
     "vue-tsc": "^0.3.0"
-  }
+  },
+  "description": "- composition API\r - data models\r - parametrized routes\r - full store\r - separated global styles\r - api connection dev and prod\r - backend error management\r - input validation",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skatos-ux/Blazing-Fast-Vue-Vite-Template.git"
+  },
+  "author": "Nicolas MAGNE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skatos-ux/Blazing-Fast-Vue-Vite-Template/issues"
+  },
+  "homepage": "https://github.com/skatos-ux/Blazing-Fast-Vue-Vite-Template#readme"
 }

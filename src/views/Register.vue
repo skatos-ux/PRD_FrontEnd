@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
 import { useStore } from '@/store';
-import Error from '@/components/atoms/Error.vue';
+import Error from '@/components/atoms/FeedBack.vue';
 
 const store = useStore();
 

@@ -5,9 +5,9 @@
   height: 100%;
 }
 .page--fullsize {
-  height: 100vh;
+  height: calc(100vh - 6rem);
 }
-// FLEXBOXES
+
 .flex {
   display: flex;
 }
@@ -51,13 +51,15 @@
 .align-center {
   align-items: center;
 }
+.align-stretch {
+  align-items: stretch;
+}
 
 .center {
   justify-content: center;
   align-items: center;
 }
 
-// TEXT
 .text-left {
   text-align: left;
 }
@@ -68,4 +70,12 @@
 
 .text-right {
   text-align: right;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.g1 {
+  gap: 1rem;
 }

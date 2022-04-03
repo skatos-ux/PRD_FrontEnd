@@ -15,3 +15,25 @@ input:focus-visible, select:focus-visible {
 a {
   text-decoration: none
 }
+
+.fc-timegrid-event .fc-event-main {
+  padding: 0 !important;
+}
+.fc .fc-daygrid-body-natural .fc-daygrid-day-events {
+  margin-bottom: 0!important;
+}
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+  min-height: auto!important;
+}
+.fc-direction-ltr .fc-timegrid-col-events {
+  margin: 0 2px!important;
+}
+.fc .fc-timegrid .fc-daygrid-body {
+  z-index: 0 !important;
+}
+
+.calendar__wrapper {
+  div {
+    height: 100%;
+  }
+}

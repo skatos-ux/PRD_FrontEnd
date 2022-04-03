@@ -6,7 +6,7 @@ defineProps<{ type: string }>();
 </script>
 
 <template>
-	<p :class="`info--${type}`">
+	<p  class="info" :class="`info--${type}`">
 		<slot></slot>
 	</p>
 </template>

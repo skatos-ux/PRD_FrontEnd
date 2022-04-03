@@ -1,40 +1,113 @@
 .button {
-  border-radius: 15px;
-  padding: .7rem;
+  border-radius: 6px;
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 200ms ease-in;
 
   &--error {
     background-color: $errorColor;
   }
 
+  &--end {
+    margin-bottom: 1rem;
+  }
+
   &--success {
     background-color: $successColor;
-    color: white;
+    color: black;
+
+    &:hover {
+      background-color: darken($successColor, 15%);
+    }
   }
 
   &--info {
     background-color: $infoColor;
+  }
+
+  &--warning {
+    background-color: $warningColor;
+  }
+
+  &--tooltip {
+    position: relative;
   }
 }
 
 .form {
   border-radius: 15px;
 
+  &__group {
+    border-radius: 7px;
+    border: 2px solid lighten($shadowColor, 40%);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
   &__label {
     width: 100%;
 
+    &--header {
+      font-weight: 500;
+      transform: translateY(-1.25rem);
+      position: absolute;
+      .form__label {
+        background-color: white;
+        padding-inline: 5px;
+      }
+    }
+
+    &--unit {
+      position: absolute;
+      font-size: 0.8rem;
+      margin-right: 0.25rem;
+    }
+
     &--nostretch {
-      width: auto;
+      width: auto !important;
     }
 
     &--mini {
       font-size: 0.9rem;
     }
+
+    &--checkbox {
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    &--align {
+      padding-left: 0.5rem;
+    }
   }
 
   &__input {
-    border-radius: 15px;
-    width: calc(100% - 1rem);
+    border-radius: 7px;
+    width: 100%;
     padding: .5rem;
+
+    &--native {
+      width: 100%;
+      background-color: lighten($shadowColor, 45%);
+      border-radius: 6px;
+      padding: 0.5rem;
+      position: relative;
+    }
+
+    &--wrong {
+      outline: 2px solid red;
+    }
+
+    &--selector {
+      margin-block: 0.5rem 1rem;
+    }
+
+    &--label {
+      margin-top: 0.5rem;
+    }
   }
 
   &__anchor--mini {
@@ -43,10 +116,15 @@
 }
 
 .info {
-  width: calc(100% - 2rem);
-  padding: 1rem;
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 0.25rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 
   &--error {
+    color: white;
     background-color: $errorColor;
   }
 
@@ -60,7 +138,97 @@
 }
 
 .checkbox {
-  margin-left: .5rem;
+  margin-inline: .5rem;
   vertical-align: middle;
   position: relative;
+}
+
+.hoverable {
+  background-color: transparent;
+  transition: background-color 200ms ease-in-out;
+  &:hover {
+    background-color: darken($shadowColor, 10%);
+  }
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+.icon {
+  aspect-ratio: 1/1;
+}
+
+.calendar__wrapper {
+  height: 100%;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.calendar__legend {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  height: 100%;
+  overflow: hidden;
+}
+
+.calendar__event {
+  display: grid;
+  grid-template-columns: 2fr  1fr 3fr;
+  grid-template-rows: 2fr 3fr;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  cursor: pointer;
+  background-color: $eventColor;
+  transition: background-color 200ms ease-in;
+
+  &:hover {
+    background-color: darken($eventColor, 10%);
+  }
+
+  &--nohover {
+    display: grid;
+    grid-template-columns: 2fr  1fr 3fr;
+    grid-template-rows: 2fr 3fr;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    background-color: $eventColor;
+  }
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid black;
+
+}
+
+.divider {
+  background-color: $shadowColor;
+  &--h {
+    height: calc(100% - 1rem);
+    width: 1px;
+  }
+}
+
+.dayCell {
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.p1 {
+  font-weight: bold;
+}
+
+.p2 {
+  padding: 2px;
+  grid-column: 2 / span 2;
 }

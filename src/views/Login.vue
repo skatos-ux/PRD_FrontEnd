@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
-import Error from '@/components/atoms/Error.vue';
+import FeedBack from '@/components/atoms/FeedBack.vue';
 import { useStore } from '@/store';
 
 const store = useStore();
@@ -18,13 +18,13 @@ function connect(): void {
 
 <template>
 	<div class="page page--fullsize flex center column">
-		<form class="login__form form flex column content-start align-end">
+		<form class="form flex column content-start align-end">
 
-			<label class="form__label text-left">Adresse email</label>
+			<label class="form__label form__label--align text-left">Adresse email</label>
 			<input id="email" v-model="email" autocomplete="email" class="form__input" placeholder="exemple@xyz.fr" type="email">
 
-			<div class="login__passwords flex row content-between align-end">
-				<label class="form__label form__label--nostretch text-left">Mot de passe</label>
+			<div class="login__passwords flex row justify-between align-end">
+				<label class="form__label form__label--align form__label--nostretch text-left">Mot de passe</label>
 				<a class="form__anchor--mini" href="/fpassword">Mot de passe oublié</a>
 			</div>
 			<input v-model="password" autocomplete="password" class="form__input" type="password">
@@ -34,9 +34,9 @@ function connect(): void {
 				<input v-model="stayConnected" class="checkbox" type="checkbox">
 			</div>
 
-			<Error v-for="error in errors" :key="error" type="error">{{ error }}</Error>
+			<FeedBack v-for="error in errors" :key="error" type="error">{{ error }}</FeedBack>
 
-			<button class="button button--success" @click="connect">Connexion</button>
+			<button class="button" @click="connect">Connexion</button>
 		</form>
 		<div class="form">
 			<p>Nouveau sur l'application ? <a href="/register">Créer un compte</a></p>
@@ -46,15 +46,24 @@ function connect(): void {
 
 <style lang="scss" scoped>
 .form {
-	width: 30rem;
+	width: 22rem;
 	gap: .5rem;
 	padding: 1rem;
-	background-color: lighten($mainColor1, 30%);
+	background-color: lighten($mainColor1, 15%);
 	border: 1px solid $shadowColor;
 
 	+ .form {
 		margin-top: 2rem;
+		font-size: 0.8rem;
+		text-align: center;
 	}
+}
+.button {
+	width: 100%;
+	background-color: darken($mainColor1, 10%);
+	color: white;
+	margin-top: 0.5rem;
+	font-size: 0.9rem;
 }
 
 .login__passwords {
